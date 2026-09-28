@@ -1,8 +1,8 @@
 # Hands-on Neuropixels Training Course
 
-This repository contains basic information and pyhton tutorials used in the Hands-on Neuropixels training course. This course is funded by NIH award __U24NS140961__. 
+This repository contains basic information and python tutorials used in the Hands-on Neuropixels training course. This course is funded by NIH award __U24NS140961__. 
 
-The course covers the basics of Neuropixels setup and recording. The application form is [here](https://docs.google.com/forms/d/e/1FAIpQLSc7g9SJQp5X2tzVQzMXG5RG2lT3Sg64LXyvLmTyQ9gza8XrcQ/viewform?pli=1)).
+The course covers the basics of Neuropixels setup and recording, with the goal of getting new users started in their own lab. The application form is [here.](https://docs.google.com/forms/d/e/1FAIpQLSc7g9SJQp5X2tzVQzMXG5RG2lT3Sg64LXyvLmTyQ9gza8XrcQ/viewform?pli=1)
 
 The goal of the tutorials is to show how to navigate spike sorting outputs to retrieve data and make plots and how data are structured, so we use mostly standard python libraries.
 
