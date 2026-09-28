@@ -1,6 +1,6 @@
-# Harvard-neuropixels-2026
+# Hands-on Neuropixels Traing Course
 
-This repository contains files for the _Python_ tutorials in the 2026 Harvard Neuropixels course. 
+This repository contains files for the _Python_ tutorials in the Hands-on Neuropixels training course. This course is funded NIH award __U24NS140961__. The application form is [here](https://docs.google.com/forms/d/e/1FAIpQLSc7g9SJQp5X2tzVQzMXG5RG2lT3Sg64LXyvLmTyQ9gza8XrcQ/viewform?pli=1)).
 
 The goal of the tutorials is to show how to navigate spike sorting outputs to retrieve data and make plots and how data are structured, so we use mostly standard python libraries.
 
@@ -157,7 +157,5 @@ In short, the _minimum requirements_ for an **acquisition computer**  are:
 | Allen Visual Coding neuropixels tutorial| Tutorial |  [Allen Neuropixels](https://allensdk.readthedocs.io/en/latest/visual_coding_neuropixels.html) | Allen Institute|
 | Tutorial to look at data with CellExplorer| Tutorial | [Cell Explorer](https://cellexplorer.org/tutorials/neuropixels-tutorial/) | Peter Petersen|
 
-We acknowledge the support from NIH U24 award __U24NS140961__. 
-This repository was created to support the first course in UCLA in January 2026.
 
 Feedback welcomed at ``couto@ucla.edu`` or ``colonellj@janelia.hhmi.org``
