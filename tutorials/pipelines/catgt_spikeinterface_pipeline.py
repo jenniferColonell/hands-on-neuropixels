@@ -220,7 +220,7 @@ def main():
     run_name = 'AL032_2019-11-21_stripe192-natIm'     # excludes gate and trigger
     gate_str = '0'         # from the run folder name, _g0 => gate_str=0
     prb_ind = 1000         # from the name of the probe folder
-    output_parent=r'D:\course_data\output'
+    output_parent=r'D:\course_data\output'  #must exist
 
     # CatGT params
     car_mode = "gblcar"
@@ -242,7 +242,7 @@ def main():
     job_kwargs = dict(n_jobs=4, chunk_duration='1s', progress_bar=True) # how to chunk and process data
 
     # What to run -- set both to True to run from scratch
-    b_catgt = False  # set to false to re-run wihout re-running CatGT, for example to test sorting and metrics calculation
+    b_catgt = True  # set to false to re-run wihout re-running CatGT, for example to test sorting and metrics calculation
     b_sort = True # set to False to skip sorting and just open the Analyzer -- useful for testing metrics calculation alone
 
     #------End of user params-------------
@@ -276,7 +276,7 @@ def main():
         idx_sort = -1
     
     
-    rec = si.read_spikeglx(catgt_out_folder, stream_name=stream_names[idx_sort], load_sync_channel=False)  
+    rec = si.read_spikeglx(catgt_out_folder, stream_name=stream_names[idx_sort])  
     if b_useDREDge:
         rec_sort = si.correct_motion(recording=rec, preset=si_motion_preset)
         ks4_params['nblocks'] = 0 # skip KS motion correction
