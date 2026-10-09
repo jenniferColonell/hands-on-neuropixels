@@ -8,8 +8,8 @@ sglx_addr = "localhost"
 sglx_port = 4142
 
 
-# Plays wave 'jwave' at OneBox channel AO-0.
-# Playback is triggered by software command.
+# Plays wave variable wavenme at OneBox channel AO-0.
+# playback is triggered by a hardware signal at 
 #
 def wp_soft_start():
 
@@ -24,11 +24,11 @@ def wp_soft_start():
         slot = 20
 
         # Load the wave plan
-        wave_name = 'sine_0p5_16Hz_no_delay'
+        wave_name = '5V_sq_multi'
         # time for the wave to play, in seconds. Get a value by hitting 'Check'
         # in the Wave Planner dialog.
-        wave_time = 21
-        n_iter = 3  # number of times to play the whole wave
+        wave_time = 6  
+        n_iter = 2  # number of times to play the whole wave
 
         ok = sglx.c_sglx_obx_wave_load( hSglx, ip, slot, wave_name.encode() )
 
